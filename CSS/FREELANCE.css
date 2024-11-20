@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --myBlue: #2c3e50;
+    --myGreen: #1abc9c;
+    --myWhite: #ffffff;
+    --mainFont: "Montserrat";
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* NAV SEC */
+
+h1 {
+    font-family: var(--mainFont);
+    color: var(--myWhite);
+    font-size: 40px;
+}
+
+nav {
+    background-color: var(--myBlue);
+    color: var(--myWhite);
+    font-family: var(--mainFont);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 24px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav #MenuItems {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: var(--mainFont);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--myWhite);
+}
+
+/* BANNER SEC */
+
+#Banner {
+    text-align: center;
+    background-color: var(--myGreen);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#Banner>* {
+    margin-top: 25px;
+}
+
+#BannerPicture {
+    display: inline-block;
+}
+
+#star {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    color: rgb(67, 67, 67);
+}
+
+#star hr {
+    width: 250px;
+    height: 7px;
+    background-color: var(--myWhite);
+    border-radius: 5px;
+}
+
+#star svg {
+    fill: var(--myWhite) !important;
+}
+
+#BannerName {
+    color: var(--myWhite);
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--mainFont);
+}
+
+/* PORTOFLIO SEC */
+
+.PortfolioSTar {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+}
+
+.PortfolioSTar hr {
+    width: 250px;
+    height: 7px;
+    background-color: rgb(67, 67, 67);
+    border-radius: 5px;
+}
+
+.PortfolioSTar svg {
+    fill: rgb(67, 67, 67);
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--mainFont);
+    margin-top: 25px;
+    font-size: 40px;
+    color: rgb(67, 67, 67);
+}
+
+.cards {
+    width: 30%;
+    height: 250px;
+    border-radius: 15px;
+    background-position: center;
+
+}
+
+img {
+    width: 300px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#portfolio {
+    text-align: center;
+    background-color: var(--myWhite);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#portfolio h1 {
+    text-transform: uppercase;
+    color: var(--myBlue);
+    font-size: var(--titleFontSize);
+    font-family: var(--mainFont);
+}
+
+#portfolio .lineStarLine hr {
+    background-color: var(--myBlue);
+}
+
+#portfolio .lineStarLine svg {
+    fill: var(--myBlue) !important;
+}
+
+.portfolioCard {
+    width: 30%;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#porfolioGallery {
+    height: 110vh;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+.portfolioCard>div {
+    text-align: center;
+    font-family: var(--mainFont);
+    color: var(--myWhite);
+    font-size: 100px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--myGreen);
+
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.portfolioCard>div:hover {
+    opacity: 0.75;
+    transition: 0.7s all;
+}
+
+/* ABOUT SEC */
+#about {
+    text-align: center;
+    background-color: var(--myGreen);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#about>* {
+    margin-top: 25px;
+}
+
+h3 {
+    font-family: var(--mainFont);
+    color: var(--myWhite);
+    font-size: 40px;
+}
+
+p {
+
+    font-family: var(--mainFont);
+    color: var(--myWhite);
+    font-size: 40px;
+}
+
+#AboutStar {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+}
+
+#AboutStar hr {
+    width: 250px;
+    height: 7px;
+    background-color: var(--myWhite);
+    border-radius: 5px;
+}
+
+#AboutStar svg {
+    fill: #ffffff;
+}
+
+.Text {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-content {
+    color: var(--myWhite);
+    font-family: var(--mainFont);
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 50px;
+
+}
+
+.about-content p {
+    font-size: 20px;
+    width: 50%;
+}
+
+button {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--myGreen);
+    border-color: var(--myWhite);
+    color: #ffffff;
+    text-decoration: none;
+    border: white solid;
+}
+
+a :hover {
+    cursor: pointer;
+    transition: all;
+    background-color: var(--myWhite);
+    color: black;
+}
+
+/* CONTACT SEC */
+
+h4 {
+    text-align: center;
+    font-family: var(--mainFont);
+    margin-top: 25px;
+    font-size: 40px;
+    color: rgb(67, 67, 67);
+
+}
+
+.Data {
+    text-align: center;
+    font-size: 100px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid rgba(209, 209, 209, 0.419);
+    width: 50%;
+    padding: 40px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+
+}
+
+#Massage {
+    padding: 80px;
+    border: none;
+    border-bottom: 2px solid rgba(209, 209, 209, 0.419);
+    width: 50%;
+    padding: 40px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+}
+
+form {
+    margin-left: 40%;
+    margin-right: 30%;
+    width: 50%;
+}
+
+button {
+    block-size: auto;
+}
+
+/* FOOTER SEC */
+footer {
+
+    background-color: var(--myBlue);
+    font-family: var(--mainFont);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: var(--myWhite);
+}
+
+footer #Location {
+    font-size: 15px;
+    display: block;
+    justify-content: center;
+    font-family: var(--mainFont);
+    align-items: center;
+
+
+}
+
+footer #Location h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+footer #Location p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+footer #Around {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer #Around h3 {
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+footer #aboutFreelancer {
+    font-size: 15px;
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+footer #aboutFreelancer h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+footer #aboutFreelancer a {
+    color: var(--myGreen);
+}
+
+footer #aboutFreelancer p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* Mobile & Tablet rules */
+@media (max-width:767px) {
+    nav {
+        width: 120%;
+        display: flex;
+    }
+
+    nav #MenuItems {
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    nav h1 {
+        font-size: 30px;
+    }
+
+
+
+}
