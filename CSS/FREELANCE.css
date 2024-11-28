@@ -423,20 +423,50 @@ footer #aboutFreelancer p {
 /* Mobile & Tablet rules */
 @media (max-width:767px) {
     nav {
-        width: 120%;
+        width: 100%;
         display: flex;
+
     }
 
     nav #MenuItems {
         flex-direction: column;
         margin-top: 15px;
         align-items: center;
+        padding: 10px;
+        font-size: 15px;
     }
 
     nav h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
+    #star {
+        margin: 25px auto;
+        width: 300px;
+
+    }
+
+    .PortfolioSTar {
+        margin: 25px auto;
+        display: flex;
+        width: 300px;
+    }
+
+    #AboutStar {
+        margin: 25px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 300px;
+    }
+
+    footer #Location h3 {
+        text-align: center;
+    }
+
+    footer #aboutFreelancer h3 {
+       text-align: center;
+    }
 
 
 }
